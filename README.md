@@ -2,41 +2,15 @@
 
 # Tech Stack
 
-# Containerization
-
 Docker
-
 Docker Compose
-
-# Backend Application
-
 Python
-
 FastAPI
-
-Uvicorn ASGI Server
-
-# Databases
-
+Uvicorn
 PostgreSQL
-
 Redis
-
-# Infrastructure & Environment
-
-Linux containers
-
-Docker networking
-
-Docker volumes for persistent storage
-
-# Development & DevOps
-
 Git
-
 GitHub
-
-Environment variables (.env configuration)
 
 # Overview
 
