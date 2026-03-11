@@ -1,5 +1,43 @@
 # Docker Essentials Lab
 
+# Tech Stack
+
+# Containerization
+
+Docker
+
+Docker Compose
+
+# Backend Application
+
+Python
+
+FastAPI
+
+Uvicorn ASGI Server
+
+# Databases
+
+PostgreSQL
+
+Redis
+
+# Infrastructure & Environment
+
+Linux containers
+
+Docker networking
+
+Docker volumes for persistent storage
+
+# Development & DevOps
+
+Git
+
+GitHub
+
+Environment variables (.env configuration)
+
 # Overview
 
 A containerized microservice application built with FastAPI, Redis, and PostgreSQL, orchestrated with DoThis project demonstrates real-world DevOps and Cloud Engineering practices including containerization, Architecture
