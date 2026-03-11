@@ -1,5 +1,7 @@
-Docker Essentials Lab
-Overview
+# Docker Essentials Lab
+
+# Overview
+
 A containerized microservice application built with FastAPI, Redis, and PostgreSQL, orchestrated with DoThis project demonstrates real-world DevOps and Cloud Engineering practices including containerization, Architecture
 Internet
  |
@@ -9,26 +11,32 @@ Docker Compose
  |---- FastAPI (API Service)
  |---- Redis (Cache Layer)
  |---- PostgreSQL (Database)
-Tech Stack
+
+# Tech Stack
+
 Backend: Python, FastAPI, Uvicorn
 Containers: Docker, Docker Compose
 Database: PostgreSQL
 Caching: Redis
 Infrastructure: Terraform, AWS EC2
-Run Locally
+
+# Run Locally
+
 git clone https://github.com/Gvld3iii/docker-essentials-lab.git
 cd docker-essentials-lab
 cp .env.example .env
 docker compose up --build
 Open: http://localhost:8000
-API Endpoints
+
+# API Endpoints
 / Root endpoint
 /health Health check
 /redis Redis connectivity test
 /db Database connectivity test
 /visit Visit counter example
 /docs Swagger documentation
-Deploy to AWS with Terraform
+
+# Deploy to AWS with Terraform
 cd terraform
 terraform init
 terraform plan
@@ -38,7 +46,8 @@ Terraform provisions:
 - Security group (ports 22 and 8000)
 - Docker installation
 - Application deployment with Docker Compose
-Troubleshooting Learned
+
+# Troubleshooting Learned
 Cloud-init debugging:
 sudo cat /var/log/cloud-init-output.log
 Docker container debugging:
@@ -47,13 +56,15 @@ docker ps
 docker compose restart
 Permissions fix:
 sudo chown -R ubuntu:ubuntu docker-essentials-lab
-Future Improvements
+
+# Future Improvements
 CI/CD with GitHub Actions
 Kubernetes deployment
 Nginx load balancer
 Auto-scaling infrastructure
 Observability with Prometheus and Grafana
-Author
+
+# Author
 Kharee Bellamy
 Cloud / DevOps Engineer
 GitHub: https://github.com/Gvld3iii
