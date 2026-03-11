@@ -1,64 +1,59 @@
-# Docker Essentials Lab
-
-This project demonstrates a containerized microservice backend using Docker and Docker Compose.
-
-## Architecture
-
-Browser
- ↓
-FastAPI API
- ↓
-Redis Cache
- ↓
-PostgreSQL Database
- ↓
-Docker Volume (persistent storage)
-
-## Services
-
-- FastAPI backend
-- Redis caching layer
-- PostgreSQL database
-- Docker Compose orchestration
-
-## Features
-
-- API containerization with Docker
-- Multi-container architecture
-- Redis caching
-- PostgreSQL persistence
-- Docker networking
-- Health check endpoint
-- Restart policies
-- Automatic database initialization
-
-## Endpoints
-
-/          - Root endpoint (Redis cached)
-/health    - Health check
-/redis     - Redis test
-/db        - Database test
-/visit     - Page visit counter
-
-## Run Locally
-
-Build and start the stack:
-
-docker compose up --build
-
-Access API:
-
-http://localhost:8000
-
-Stop services:
-
-docker compose down
-
-## Tech Stack
-
-Python  
-FastAPI  
-Redis  
-PostgreSQL  
-Docker  
+Docker Essentials Lab
+Overview
+A containerized microservice application built with FastAPI, Redis, and PostgreSQL, orchestrated with DoThis project demonstrates real-world DevOps and Cloud Engineering practices including containerization, Architecture
+Internet
+ |
+AWS EC2 Instance
+ |
 Docker Compose
+ |---- FastAPI (API Service)
+ |---- Redis (Cache Layer)
+ |---- PostgreSQL (Database)
+Tech Stack
+Backend: Python, FastAPI, Uvicorn
+Containers: Docker, Docker Compose
+Database: PostgreSQL
+Caching: Redis
+Infrastructure: Terraform, AWS EC2
+Run Locally
+git clone https://github.com/Gvld3iii/docker-essentials-lab.git
+cd docker-essentials-lab
+cp .env.example .env
+docker compose up --build
+Open: http://localhost:8000
+API Endpoints
+/ Root endpoint
+/health Health check
+/redis Redis connectivity test
+/db Database connectivity test
+/visit Visit counter example
+/docs Swagger documentation
+Deploy to AWS with Terraform
+cd terraform
+terraform init
+terraform plan
+terraform apply
+Terraform provisions:
+- AWS EC2 instance
+- Security group (ports 22 and 8000)
+- Docker installation
+- Application deployment with Docker Compose
+Troubleshooting Learned
+Cloud-init debugging:
+sudo cat /var/log/cloud-init-output.log
+Docker container debugging:
+docker compose logs
+docker ps
+docker compose restart
+Permissions fix:
+sudo chown -R ubuntu:ubuntu docker-essentials-lab
+Future Improvements
+CI/CD with GitHub Actions
+Kubernetes deployment
+Nginx load balancer
+Auto-scaling infrastructure
+Observability with Prometheus and Grafana
+Author
+Kharee Bellamy
+Cloud / DevOps Engineer
+GitHub: https://github.com/Gvld3iii
